@@ -2,7 +2,7 @@ name: pull-requests
 
 on:
   pull_request:
-    branches: ['main']
+    branches: ['push']
 
 jobs:
    gitleaks:
