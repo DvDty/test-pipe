@@ -3,10 +3,18 @@ name: CI
 on:
   push:
     branches: [ "main" ]
+
 jobs:
   gitleaks:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: Run a one-line script
-        run: sleep 5
+        run: sleep 2
+
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run a one-line script
+        run: sleep 12
